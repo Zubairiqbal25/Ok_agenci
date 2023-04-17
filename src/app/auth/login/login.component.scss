@@ -1,0 +1,97 @@
+mat-card {
+    max-width: 500px;
+    margin: 2em auto;
+    text-align: center;
+    max-height: 660px;
+    box-shadow: 0px 0px 10px 3px #969696;
+    background-color: #f4f4f4;
+  }
+  mat-grid-list{
+    padding-bottom: calc(1 * ((22% - 0.75px) * 1) + 0px + 0px) !important;
+  }
+  .mat-mdc-card-content{
+    padding: 16px 0px;
+  }
+  .header-box{
+    background-color: #c8e8d9;
+  }
+  .header-box h3 {
+    color: #0f9e61;
+  }
+  .header-box h3 span {
+    font-size: 15px;
+    font-weight: 400;
+    color: #83deb7;
+}
+  mat-form-field{
+    padding-bottom: 1%;
+  }
+
+  .login-header-logo-img{
+    padding: 3%;
+    width: 30%;
+  }
+  .login-header-img{
+    padding: 3%;
+    width: 75%;
+  }
+  input[type=text] {
+    border: solid black;
+  }
+  .mat-mdc-card{
+    border-radius: var(--mdc-elevated-card-container-shape, var(--mdc-shape-medium, 12px));
+  }
+  .header{
+    text-align: center;
+  
+  }
+  .full-width {
+    width: 80%;
+  }
+  
+  .button-row {
+    padding-top: 5px;
+  }
+  
+  .button-row a {
+    margin-right: 8px;
+    text-align: center;
+  }
+  
+  .forget-password{
+    padding-left: 0px;
+  }
+  .ClientUsernameInput{
+    margin-top: 3%;
+  }
+  .emailInput,.ClientUsernameInput{
+    padding-top: 10px;
+  }
+  
+  .contentBody {
+    padding: 5px 1rem;
+    background :#1b6ca8;
+    display: block;
+  }
+  
+  .aLink{
+    float: left;
+    padding-right: 60px;
+    text-decoration: none;
+    margin-left : 10%
+  }
+
+  .forgot-btn{
+    display: flex;
+  }
+.login-btn{
+    padding: 4%;
+    border-radius: 28px;
+    width: 23%;
+    font-size: 16px;
+}
+
+.Header-Text-Section {
+    margin-left: -38%;
+    margin-top: -7%;
+ }
