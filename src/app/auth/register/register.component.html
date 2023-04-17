@@ -1,1 +1,94 @@
-<p>register works!</p>
+<mat-card>
+    <mat-card-content>
+        <div class="header">
+            <img class="login-header-logo-img" src="./../../../assets/LogoOK.png"/>
+        </div>
+      <div class="header-box">
+        <mat-grid-list cols="4">
+            <mat-grid-tile
+            [colspan]="3">
+            <div class="Header-Text-Section">
+                <h3>
+                    Welcome Back!<br>
+                    <span>Sign in to continue</span>
+                </h3>    
+            </div>
+            </mat-grid-tile>
+            <mat-grid-tile
+            [colspan]="1">
+                <img class="login-header-img" src="./../../../assets/work-from-home.png"/>
+            </mat-grid-tile>
+            </mat-grid-list>
+        
+      </div>
+      <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="RegisterForm">
+        <div class="emailInput">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Name</mat-label>
+            <input
+            class="cutom-field-color"
+              formControlName="email"
+              matInput
+              placeholder="Enter Full Name" required
+            />
+            <mat-error *ngIf="!RegisterForm.controls['name'].valid">
+                Name is required
+              </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="emailInput">
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Username</mat-label>
+            <input
+            class="cutom-field-color"
+              formControlName="email"
+              matInput
+              placeholder="Enter Username address" required
+            />
+            <mat-error *ngIf="!RegisterForm.controls['email'].valid">
+                Username is required
+              </mat-error>
+          </mat-form-field>
+        </div>
+
+        <div>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label>New Password</mat-label>
+            <input formControlName="password" class="cutom-field-color" matInput [type]=" !hide ? 'password' : 'text'" required />
+            <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+            [attr.aria-pressed]="hide">
+            <mat-icon>
+                {{!hide ? 'visibility_off' : 'visibility'}}
+            </mat-icon>
+        </button>
+        <mat-error *ngIf="!RegisterForm.controls['password'].valid">
+            Password is required
+          </mat-error>
+        </mat-form-field>
+        </div>
+
+        <div class="emailInput">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Confirm Password</mat-label>
+                <input formControlName="password" class="cutom-field-color" matInput [type]=" !hide ? 'password' : 'text'" required />
+                <button  mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide Password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>
+                    {{!hide ? 'visibility_off' : 'visibility'}}
+                </mat-icon>
+            </button>
+            <mat-error *ngIf="!RegisterForm.controls['ConfirmPassword'].valid">
+                Password is required
+              </mat-error>
+            </mat-form-field>
+          </div>
+
+
+        <button class="login-btn" mat-flat-button color="primary">Register</button>
+      </form>
+
+      <!-- <div class="button-row">
+        <p>Create New Account</p>
+      </div> -->
+    </mat-card-content>
+  </mat-card>
