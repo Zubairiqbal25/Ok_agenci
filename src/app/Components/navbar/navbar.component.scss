@@ -1,0 +1,38 @@
+.spacer {
+    flex: 1 1 auto;
+  }
+  .mat-toolbar-row, .mat-toolbar-single-row{
+    height: 50px;
+  }
+  .navbar-logo-img{
+    width: 110px;
+    margin-left: 1px;
+  }
+  .navbar-euro-icon{
+    margin-left:40px;
+  }
+  .navbar-euro-icon mat-icon{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: -5px;
+  }
+  .navbar-flag-icon{
+    margin-left: 17px;
+  }
+  .navbar-flag-icon img{
+    width: 15px;
+    margin-bottom: 4px;
+  }
+  .icon-space{
+    margin-right: 13px;
+    font-size: 20px;
+    margin-bottom: -5px;
+    font-weight: 500;
+  }
+  .navbar-flag-icon img{
+    width: 15px;
+    margin-bottom: 4px;
+  }
+  .username-style{
+    margin: 0px 7px -4px 7px;
+  }

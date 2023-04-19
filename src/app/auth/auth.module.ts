@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RegisterComponent } from './register/register.component';
-import { LoginComponent } from './login/login.component';
-import { ResetComponent } from './reset/reset.component';
+import { RegisterComponent } from './../Components/register/register.component';
+import { LoginComponent } from './../Components/login/login.component';
+import { ResetComponent } from './../Components/reset/reset.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';

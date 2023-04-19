@@ -1,0 +1,34 @@
+  <mat-toolbar color="white" class="mat-elevation-z8">
+    <span>
+        <span><button mat-icon-button>
+            <mat-icon (click)="SideNavBtn()" fontIcon="widgets"></mat-icon>
+          </button></span>
+    <span>
+        <img src="../../../assets/LogoOK.png" class="navbar-logo-img"/>
+    </span>
+    <span class="navbar-euro-icon">
+        <mat-icon fontIcon="euro_symbol"></mat-icon>
+    </span>
+    <span class="navbar-flag-icon">
+        <img src="../../../assets/united-kingdom.png"/>
+        <!-- <mat-select>
+            <mat-option *ngFor="let country of countries" [value]="country.name">
+              <img src='{{country.Url}}' style="width:15px;"> {{country.name}}
+            </mat-option>
+          </mat-select> -->
+        <!-- <select class="form-control" name="country" id="country">
+            <option value="" disabled selected>Select Country</option>
+            <option *ngFor="let country of countries" [value]= "country.name">{{country.name}}</option>
+       </select> -->
+    </span>
+    </span>
+
+     <div class="spacer"></div>
+   
+     <mat-icon class="icon-space"> mail_outline</mat-icon>
+     <mat-icon class="icon-space">notifications_none</mat-icon>
+     <span style="margin-bottom: -5px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ55xNIciu8yA_9IqA9TB3oPwEheZmo_gKWsg&usqp=CAU" style="width: 25px;">
+     </span>
+     <span class="username-style">Zubair</span>
+    </mat-toolbar>

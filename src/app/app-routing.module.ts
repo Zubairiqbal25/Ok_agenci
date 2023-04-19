@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './auth/login/login.component';
-import { ResetComponent } from './auth/reset/reset.component';
-import { RegisterComponent } from './auth/register/register.component';
+import { LoginComponent } from './Components/login/login.component';
+import { ResetComponent } from './Components/reset/reset.component';
+import { RegisterComponent } from './Components/register/register.component';
+import { MainViewerComponent } from './Components/main-viewer/main-viewer.component';
 import { MainPageModule } from './main-page/main-page.module';
 
 const routes: Routes = [
@@ -38,12 +39,12 @@ const routes: Routes = [
     ]
   },
   {
-    path : 'Main',
+    path : 'MainViewerComponent',
     component: AppComponent,
     children:[
       {
         path : '',
-        component: MainPageModule
+        component: MainViewerComponent
       }
     ]
   } 
